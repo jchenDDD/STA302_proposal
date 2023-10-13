@@ -1,14 +1,29 @@
 ---
-title: "R Notebook"
+title: "STA302_proposal"
 output: html_notebook
 ---
 
-This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
-
-Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+Reading in data
 
 ```{r}
-plot(cars)
+data_frame <- read.csv("data.csv")
+head(data)
+data_matrix <- data.matrix(subset(data_frame, select=c(danceability, energy, liveness, mode, tempo, valence)))
+head(data_matrix["valance"])
+```
+
+```{r}
+x1 <- data_matrix[,"danceability"]
+x2 <- data_matrix[,"energy"]
+x3 <- data_matrix[,"liveness"]
+x4 <- data_matrix[,"mode"]
+x5 <- data_matrix[,"tempo"]
+y <- data_matrix[,"valence"]
+x <- data.frame(cbind(x1,x2,x3,x4,x5))
+model <- lm(formula = y ~ x1+x2+x3+x4+x5)
+y_hat <- predict(model, newdata = x)
+e = y - y_hat
+rss <- t(e) %*% e
 ```
 
 Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
