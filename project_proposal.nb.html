@@ -1755,9 +1755,20 @@ display: none;
 <p>Reading in data</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuaGVhZChkYXRhX21hdHJpeFtcInZhbGFuY2VcIl0pXG5cbmBgYCJ9 -->
-<pre class="r"><code>head(data_matrix[&quot;valance&quot;])
-</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGF0YV9mcmFtZSA8LSByZWFkLmNzdihcImRhdGEuY3N2XCIpXG5oZWFkKGRhdGEpXG5gYGAifQ== -->
+<pre class="r"><code>data_frame &lt;- read.csv(&quot;data.csv&quot;)
+head(data)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6NiwibmNvbCI6MTd9LCJyZGYiOiJVa1JZTXdwWUNnQUFBQU1BQkFBRkFBTUZBQUFBQUFWVlZFWXRPQUFBQkFJQUFBQUJBQVFBQ1FBQUFBRjRBQUFERXdBQUFCRUFBQUFOQUFBQUJnQUFBQUFBQUFBQkFBQUFBZ0FBQUFNQUFBQUVBQUFBQlFBQUFBNEFBQUFHUDRUanZOTmFoWWcveVhqVS9mTzJSaitobk9CMTl2MGlQK05UOTg3WkZvYy94d285Y0tQWENqOXpucTNWa01DdEFBQUFEZ0FBQUFZLzZxZnZuYkl0RGovbnhxZnZuYkl0UCtyUTVXQkJpVGMvMzUyeUxRNVdCRC9sc2kwT1ZnUVpQK202WGpVL2ZPNEFBQUFOQUFBQUJnQURIemdBQlAwVkFBTFZhd0FEQ3ZVQUJmNjlBQVBWeFFBQUFBNEFBQUFHUDl2R3ArK2RzaTAvMXZuYkl0RGxZRC9hWGpVL2ZPMlJQOVdoeXNDREVtOC80Zk8yUmFIS3dUL2g2NFVldUZIc0FBQUFEZ0FBQUFZL2xtejBIeUV0ZHo5NUJzeWkyMkc3UHk2cnZMSE1sa1kvNEZIcmhSNjRVai9nWWszUzhhbjhBQUFBQUFBQUFBQUFBQUFOQUFBQUJnQUFBQUlBQUFBQkFBQUFBZ0FBQUFVQUFBQUZBQUFBQ0FBQUFBNEFBQUFHUDhVZXVGSHJoUjgvd1lrM1M4YW44RC9FV2h5c0NERW5QN2VhYTFDdzhudy8zQmlUZEx4cWZ6L0UvZk8yUmFITEFBQUFEZ0FBQUFiQUlaY0tQWENqMThBa3pVL2ZPMlJhd0J5WGpVL2ZPMlRBTG5qVS9mTzJSc0FuUzhhbjc1Mnl3QnE2WGpVL2ZPNEFBQUFOQUFBQUJnQUFBQUVBQUFBQkFBQUFBUUFBQUFFQUFBQUFBQUFBQVFBQUFBNEFBQUFHUDl1VmdRWWszUzgvdEZPTzgwMXFGai9TZnZuYkl0RGxQNXE1OVZtejBIMC9zY1F5eWxlbmh6L0hyaFI2NFVldUFBQUFEZ0FBQUFaQVlzSDc1MnlMUkVCa0FxZnZuYkl0UUZMQzBPVmdRWWxBVlozenRrV2h5MEJsd0NERW02WGpRRlZCZU5UOTg3WUFBQUFPQUFBQUJrQVFBQUFBQUFBQVFCQUFBQUFBQUFCQUVBQUFBQUFBQUVBUUFBQUFBQUFBUUJBQUFBQUFBQUJBRUFBQUFBQUFBQUFBQUE0QUFBQUdQOUpOMHZHcCsrYy80dERsWUVHSk56L0dKTjB2R3ArK1A4MXdvOWNLUFhFLzdPMlJhSEt3SVQvUTVXQkJpVGRNQUFBQURRQUFBQVlBQUFBQkFBQUFBUUFBQUFFQUFBQUJBQUFBQVFBQUFBRUFBQUFRQUFBQUJnQUVBQWtBQUFBSVRXRnpheUJQWm1ZQUJBQUpBQUFBQjFKbFpHSnZibVVBQkFBSkFBQUFERmhoYm01NUlFWmhiV2xzZVFBRUFBa0FBQUFPVFdGemRHVnlJRTltSUU1dmJtVUFCQUFKQUFBQURsQmhjbUZzYkdWc0lFeHBibVZ6QUFBQUNRQUFBQXBUYm1WaGEybHU0b0NaQUFBQUVBQUFBQVlBQkFBSkFBQUFCa1oxZEhWeVpRQUVBQWtBQUFBUVEyaHBiR1JwYzJnZ1IyRnRZbWx1YndBRUFBa0FBQUFHUm5WMGRYSmxBQVFBQ1FBQUFBdENaV0ZqYUNCSWIzVnpaUUFFQUFrQUFBQUxTblZ1YVc5eUlFSnZlWE1BQkFBSkFBQUFCVVJ5WVd0bEFBQUVBZ0FBQUFFQUJBQUpBQUFBQlc1aGJXVnpBQUFBRUFBQUFCRUFCQUFKQUFBQUFWZ0FCQUFKQUFBQURHRmpiM1Z6ZEdsamJtVnpjd0FFQUFrQUFBQU1aR0Z1WTJWaFltbHNhWFI1QUFRQUNRQUFBQXRrZFhKaGRHbHZibDl0Y3dBRUFBa0FBQUFHWlc1bGNtZDVBQVFBQ1FBQUFCQnBibk4wY25WdFpXNTBZV3h1WlhOekFBUUFDUUFBQUFOclpYa0FCQUFKQUFBQUNHeHBkbVZ1WlhOekFBUUFDUUFBQUFoc2IzVmtibVZ6Y3dBRUFBa0FBQUFFYlc5a1pRQUVBQWtBQUFBTGMzQmxaV05vYVc1bGMzTUFCQUFKQUFBQUJYUmxiWEJ2QUFRQUNRQUFBQTUwYVcxbFgzTnBaMjVoZEhWeVpRQUVBQWtBQUFBSGRtRnNaVzVqWlFBRUFBa0FBQUFHZEdGeVoyVjBBQVFBQ1FBQUFBcHpiMjVuWDNScGRHeGxBQVFBQ1FBQUFBWmhjblJwYzNRQUFBUUNBQUFBQVFBRUFBa0FBQUFKY205M0xtNWhiV1Z6QUFBQURRQUFBQUtBQUFBQUFBQUFCZ0FBQkFJQUFBQUJBQVFBQ1FBQUFBVmpiR0Z6Y3dBQUFCQUFBQUFCQUFRQUNRQUFBQXBrWVhSaExtWnlZVzFsQUFBQS9nQUFCQUlBQUFBQkFBUUFDUUFBQUFkdmNIUnBiMjV6QUFBQ0V3QUFBQVVBQUFBUUFBQUFBUUFFQUFrQUFBQUJjZ0FBQUJBQUFBQUJBQVFBQ1FBQUFBOTFibTVoYldWa0xXTm9kVzVyTFRFQUFBQUtBQUFBQVFBQUFBRUFBQUFOQUFBQUFRQUFBQVlBQUFBTkFBQUFBUUFBQUJFQUFBUUNBQUFDL3dBQUFCQUFBQUFGQUFRQUNRQUFBQVpsYm1kcGJtVUFCQUFKQUFBQUJXeGhZbVZzQUFRQUNRQUFBQTV5YjNkdVlXMWxjeTV3Y21sdWRBQUVBQWtBQUFBS2NtOTNjeTUwYjNSaGJBQUVBQWtBQUFBS1kyOXNjeTUwYjNSaGJBQUFBUDRBQUFEKyJ9 -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["X"],"name":[1],"type":["int"],"align":["right"]},{"label":["acousticness"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["danceability"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["duration_ms"],"name":[4],"type":["int"],"align":["right"]},{"label":["energy"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["instrumentalness"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["key"],"name":[7],"type":["int"],"align":["right"]},{"label":["liveness"],"name":[8],"type":["dbl"],"align":["right"]},{"label":["loudness"],"name":[9],"type":["dbl"],"align":["right"]},{"label":["mode"],"name":[10],"type":["int"],"align":["right"]},{"label":["speechiness"],"name":[11],"type":["dbl"],"align":["right"]},{"label":["tempo"],"name":[12],"type":["dbl"],"align":["right"]},{"label":["time_signature"],"name":[13],"type":["dbl"],"align":["right"]},{"label":["valence"],"name":[14],"type":["dbl"],"align":["right"]},{"label":["target"],"name":[15],"type":["int"],"align":["right"]},{"label":["song_title"],"name":[16],"type":["chr"],"align":["left"]},{"label":["artist"],"name":[17],"type":["chr"],"align":["left"]}],"data":[{"1":"0","2":"0.01020","3":"0.833","4":"204600","5":"0.434","6":"0.021900","7":"2","8":"0.1650","9":"-8.795","10":"1","11":"0.4310","12":"150.062","13":"4","14":"0.286","15":"1","16":"Mask Off","17":"Future","_rn_":"1"},{"1":"1","2":"0.19900","3":"0.743","4":"326933","5":"0.359","6":"0.006110","7":"1","8":"0.1370","9":"-10.401","10":"1","11":"0.0794","12":"160.083","13":"4","14":"0.588","15":"1","16":"Redbone","17":"Childish Gambino","_rn_":"2"},{"1":"2","2":"0.03440","3":"0.838","4":"185707","5":"0.412","6":"0.000234","7":"2","8":"0.1590","9":"-7.148","10":"1","11":"0.2890","12":"75.044","13":"4","14":"0.173","15":"1","16":"Xanny Family","17":"Future","_rn_":"3"},{"1":"3","2":"0.60400","3":"0.494","4":"199413","5":"0.338","6":"0.510000","7":"5","8":"0.0922","9":"-15.236","10":"1","11":"0.0261","12":"86.468","13":"4","14":"0.230","15":"1","16":"Master Of None","17":"Beach House","_rn_":"4"},{"1":"4","2":"0.18000","3":"0.678","4":"392893","5":"0.561","6":"0.512000","7":"5","8":"0.4390","9":"-11.648","10":"0","11":"0.0694","12":"174.004","13":"4","14":"0.904","15":"1","16":"Parallel Lines","17":"Junior Boys","_rn_":"5"},{"1":"5","2":"0.00479","3":"0.804","4":"251333","5":"0.560","6":"0.000000","7":"8","8":"0.1640","9":"-6.682","10":"1","11":"0.1850","12":"85.023","13":"4","14":"0.264","15":"1","16":"Sneakin’","17":"Drake","_rn_":"6"}],"options":{"columns":{"min":{},"max":[10],"total":[17]},"rows":{"min":[10],"max":[10],"total":[6]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGF0YV9tYXRyaXggPC0gZGF0YS5tYXRyaXgoc3Vic2V0KGRhdGFfZnJhbWUsIHNlbGVjdD1jKGRhbmNlYWJpbGl0eSwgZW5lcmd5LCBsaXZlbmVzcywgbW9kZSwgdGVtcG8sIHZhbGVuY2UpKSlcbmhlYWQoZGF0YV9tYXRyaXhbXCJ2YWxhbmNlXCJdKVxuYGBgIn0= -->
+<pre class="r"><code>data_matrix &lt;- data.matrix(subset(data_frame, select=c(danceability, energy, liveness, mode, tempo, valence)))
+head(data_matrix[&quot;valance&quot;])</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-output-begin eyJkYXRhIjoiWzFdIE5BXG4ifQ== -->
 <pre><code>[1] NA</code></pre>
@@ -1766,7 +1777,7 @@ display: none;
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxueDEgPC0gZGF0YV9tYXRyaXhbLFwiZGFuY2VhYmlsaXR5XCJdXG54MiA8LSBkYXRhX21hdHJpeFssXCJlbmVyZ3lcIl1cbngzIDwtIGRhdGFfbWF0cml4WyxcImxpdmVuZXNzXCJdXG54NCA8LSBkYXRhX21hdHJpeFssXCJtb2RlXCJdXG54NSA8LSBkYXRhX21hdHJpeFssXCJ0ZW1wb1wiXVxueSA8LSBkYXRhX21hdHJpeFssXCJ2YWxlbmNlXCJdXG54IDwtIGRhdGEuZnJhbWUoY2JpbmQoeDEseDIseDMseDQseDUpKVxubW9kZWwgPC0gbG0oZm9ybXVsYSA9IHkgfiB4MSt4Mit4Myt4NCt4NSlcbnlfaGF0IDwtIHByZWRpY3QobW9kZWwsIG5ld2RhdGEgPSB4KVxuZSA9IHkgLSB5X2hhdFxucnNzIDwtIHQoZSkgJSolIGVcbmBgYCJ9 -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxueDEgPC0gZGF0YV9tYXRyaXhbLFwiZGFuY2VhYmlsaXR5XCJdXG54MiA8LSBkYXRhX21hdHJpeFssXCJlbmVyZ3lcIl1cbngzIDwtIGRhdGFfbWF0cml4WyxcImxpdmVuZXNzXCJdXG54NCA8LSBkYXRhX21hdHJpeFssXCJtb2RlXCJdXG54NSA8LSBkYXRhX21hdHJpeFssXCJ0ZW1wb1wiXVxueSA8LSBkYXRhX21hdHJpeFssXCJ2YWxlbmNlXCJdXG54IDwtIGRhdGEuZnJhbWUoY2JpbmQoeDEseDIseDMseDQseDUpKVxubW9kZWwgPC0gbG0oZm9ybXVsYSA9IHkgfiB4MSt4Mit4Myt4NCt4NSt4MTp4Mit4Mzp4MilcbnlfaGF0IDwtIHByZWRpY3QobW9kZWwsIG5ld2RhdGEgPSB4KVxuZSA9IHkgLSB5X2hhdFxucnNzIDwtIHQoZSkgJSolIGVcbnJzc1xuYGBgIn0= -->
 <pre class="r"><code>x1 &lt;- data_matrix[,&quot;danceability&quot;]
 x2 &lt;- data_matrix[,&quot;energy&quot;]
 x3 &lt;- data_matrix[,&quot;liveness&quot;]
@@ -1774,25 +1785,148 @@ x4 &lt;- data_matrix[,&quot;mode&quot;]
 x5 &lt;- data_matrix[,&quot;tempo&quot;]
 y &lt;- data_matrix[,&quot;valence&quot;]
 x &lt;- data.frame(cbind(x1,x2,x3,x4,x5))
-model &lt;- lm(formula = y ~ x1+x2+x3+x4+x5)
+model &lt;- lm(formula = y ~ x1+x2+x3+x4+x5+x1:x2+x3:x2)
 y_hat &lt;- predict(model, newdata = x)
 e = y - y_hat
-rss &lt;- t(e) %*% e</code></pre>
+rss &lt;- t(e) %*% e
+rss</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgICBbLDFdXG5bMSxdIDkwLjIzNzZcbiJ9 -->
+<pre><code>        [,1]
+[1,] 90.2376</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubW9kZWxcbmBgYCJ9 -->
+<pre class="r"><code>model</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5DYWxsOlxubG0oZm9ybXVsYSA9IHkgfiB4MSArIHgyICsgeDMgKyB4NCArIHg1ICsgeDE6eDIgKyB4Mzp4MilcblxuQ29lZmZpY2llbnRzOlxuKEludGVyY2VwdCkgICAgICAgICAgIHgxICAgICAgICAgICB4MiAgICAgICAgICAgeDMgIFxuIC03LjUwMmUtMDIgICAgNS41NDRlLTAxICAgIDIuNTc3ZS0wMSAgIC0xLjQ5M2UtMDIgIFxuICAgICAgICAgeDQgICAgICAgICAgIHg1ICAgICAgICB4MTp4MiAgICAgICAgeDI6eDMgIFxuICAzLjU3M2UtMDMgICAgMy40ODFlLTA1ICAgIDEuNDkwZS0wMSAgIC05LjYzMGUtMDIgIFxuIn0= -->
+<pre><code>
+Call:
+lm(formula = y ~ x1 + x2 + x3 + x4 + x5 + x1:x2 + x3:x2)
+
+Coefficients:
+(Intercept)           x1           x2           x3  
+ -7.502e-02    5.544e-01    2.577e-01   -1.493e-02  
+         x4           x5        x1:x2        x2:x3  
+  3.573e-03    3.481e-05    1.490e-01   -9.630e-02  </code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
-<p>Add a new chunk by clicking the <em>Insert Chunk</em> button on the
-toolbar or by pressing <em>Ctrl+Alt+I</em>.</p>
-<p>When you save the notebook, an HTML file containing the code and
-output will be saved alongside it (click the <em>Preview</em> button or
-press <em>Ctrl+Shift+K</em> to preview the HTML file).</p>
-<p>The preview shows you a rendered HTML copy of the contents of the
-editor. Consequently, unlike <em>Knit</em>, <em>Preview</em> does not
-run any R code chunks. Instead, the output of the chunk when it was last
-run in the editor is displayed.</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeSh0aWR5dmVyc2UpXG5gYGAifQ== -->
+<pre class="r"><code>library(tidyverse)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoi4pSA4pSAIEF0dGFjaGluZyBjb3JlIHRpZHl2ZXJzZSBwYWNrYWdlcyDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAgdGlkeXZlcnNlIDIuMC4wIOKUgOKUgFxu4pyUIGRwbHlyICAgICAxLjEuMiAgICAg4pyUIHJlYWRyICAgICAyLjEuNFxu4pyUIGZvcmNhdHMgICAxLjAuMCAgICAg4pyUIHN0cmluZ3IgICAxLjUuMFxu4pyUIGdncGxvdDIgICAzLjQuMiAgICAg4pyUIHRpYmJsZSAgICAzLjIuMVxu4pyUIGx1YnJpZGF0ZSAxLjkuMiAgICAg4pyUIHRpZHlyICAgICAxLjMuMFxu4pyUIHB1cnJyICAgICAxLjAuMSAgICAg4pSA4pSAIENvbmZsaWN0cyDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAgdGlkeXZlcnNlX2NvbmZsaWN0cygpIOKUgOKUgFxu4pyWIGRwbHlyOjpmaWx0ZXIoKSBtYXNrcyBzdGF0czo6ZmlsdGVyKClcbuKcliBkcGx5cjo6bGFnKCkgICAgbWFza3Mgc3RhdHM6OmxhZygpXG7ihLkgVXNlIHRoZSBjb25mbGljdGVkIHBhY2thZ2UgKDxodHRwOi8vY29uZmxpY3RlZC5yLWxpYi5vcmcvPikgdG8gZm9yY2UgYWxsIGNvbmZsaWN0cyB0byBiZWNvbWUgZXJyb3JzXG4ifQ== -->
+<pre><code>── Attaching core tidyverse packages ────────────────────────────────────────────────────────────────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.2     ✔ readr     2.1.4
+✔ forcats   1.0.0     ✔ stringr   1.5.0
+✔ ggplot2   3.4.2     ✔ tibble    3.2.1
+✔ lubridate 1.9.2     ✔ tidyr     1.3.0
+✔ purrr     1.0.1     ── Conflicts ──────────────────────────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShrbml0cilcblxuZGF0YV9mcmFtZSA8LSByZWFkLmNzdihcImRhdGEuY3N2XCIpXG5kYXRhX2ZyYW1lIDwtIGRhdGFfZnJhbWUgJT4lIHNlbGVjdChkYW5jZWFiaWxpdHksIGVuZXJneSwgbGl2ZW5lc3MsIG1vZGUsIHRlbXBvLCB2YWxlbmNlKVxuXG5zdW1tYXJ5X2RmIDwtIGRhdGEuZnJhbWUodChzYXBwbHkoZGF0YV9mcmFtZSwgc3VtbWFyeSkpLCBjaGVjay5uYW1lcyA9IEZBTFNFKVxuXG5rYWJsZShzdW1tYXJ5X2RmLCBjb2wubmFtZXMgPSBjKFwiTWluXCIsIFwiMXN0IFF1YW50aWxlXCIsIFwiTWVkaWFuXCIsIFwiTWVhblwiLCBcIjNuZCBRdWFudGlsZVwiLCBcIk1heFwiKSlcbmBgYCJ9 -->
+<pre class="r"><code>library(knitr)
+
+data_frame &lt;- read.csv(&quot;data.csv&quot;)
+data_frame &lt;- data_frame %&gt;% select(danceability, energy, liveness, mode, tempo, valence)
+
+summary_df &lt;- data.frame(t(sapply(data_frame, summary)), check.names = FALSE)
+
+kable(summary_df, col.names = c(&quot;Min&quot;, &quot;1st Quantile&quot;, &quot;Median&quot;, &quot;Mean&quot;, &quot;3nd Quantile&quot;, &quot;Max&quot;))</code></pre>
+<!-- rnb-source-end -->
+
+<!-- rnb-html-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImtuaXRfYXNpcyJdLCJzaXppbmdQb2xpY3kiOltdfX0= -->
+
+<table>
+<colgroup>
+<col width="17%" />
+<col width="10%" />
+<col width="17%" />
+<col width="10%" />
+<col width="16%" />
+<col width="17%" />
+<col width="10%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="right">Min</th>
+<th align="right">1st Quantile</th>
+<th align="right">Median</th>
+<th align="right">Mean</th>
+<th align="right">3nd Quantile</th>
+<th align="right">Max</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">danceability</td>
+<td align="right">0.1220</td>
+<td align="right">0.5140</td>
+<td align="right">0.631</td>
+<td align="right">0.6184219</td>
+<td align="right">0.738</td>
+<td align="right">0.984</td>
+</tr>
+<tr class="even">
+<td align="left">energy</td>
+<td align="right">0.0148</td>
+<td align="right">0.5630</td>
+<td align="right">0.715</td>
+<td align="right">0.6815771</td>
+<td align="right">0.846</td>
+<td align="right">0.998</td>
+</tr>
+<tr class="odd">
+<td align="left">liveness</td>
+<td align="right">0.0188</td>
+<td align="right">0.0923</td>
+<td align="right">0.127</td>
+<td align="right">0.1908440</td>
+<td align="right">0.247</td>
+<td align="right">0.969</td>
+</tr>
+<tr class="even">
+<td align="left">mode</td>
+<td align="right">0.0000</td>
+<td align="right">0.0000</td>
+<td align="right">1.000</td>
+<td align="right">0.6122955</td>
+<td align="right">1.000</td>
+<td align="right">1.000</td>
+</tr>
+<tr class="odd">
+<td align="left">tempo</td>
+<td align="right">47.8590</td>
+<td align="right">100.1890</td>
+<td align="right">121.427</td>
+<td align="right">121.6032717</td>
+<td align="right">137.849</td>
+<td align="right">219.331</td>
+</tr>
+<tr class="even">
+<td align="left">valence</td>
+<td align="right">0.0348</td>
+<td align="right">0.2950</td>
+<td align="right">0.492</td>
+<td align="right">0.4968150</td>
+<td align="right">0.691</td>
+<td align="right">0.992</td>
+</tr>
+</tbody>
+</table>
+
+
+<!-- rnb-html-end -->
+
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiU1RBMzAyX3Byb3Bvc2FsIgpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sKLS0tCgpSZWFkaW5nIGluIGRhdGEKCmBgYHtyfQpkYXRhX2ZyYW1lIDwtIHJlYWQuY3N2KCJkYXRhLmNzdiIpCmhlYWQoZGF0YSkKZGF0YV9tYXRyaXggPC0gZGF0YS5tYXRyaXgoc3Vic2V0KGRhdGFfZnJhbWUsIHNlbGVjdD1jKGRhbmNlYWJpbGl0eSwgZW5lcmd5LCBsaXZlbmVzcywgbW9kZSwgdGVtcG8sIHZhbGVuY2UpKSkKaGVhZChkYXRhX21hdHJpeFsidmFsYW5jZSJdKQpgYGAKCmBgYHtyfQp4MSA8LSBkYXRhX21hdHJpeFssImRhbmNlYWJpbGl0eSJdCngyIDwtIGRhdGFfbWF0cml4WywiZW5lcmd5Il0KeDMgPC0gZGF0YV9tYXRyaXhbLCJsaXZlbmVzcyJdCng0IDwtIGRhdGFfbWF0cml4WywibW9kZSJdCng1IDwtIGRhdGFfbWF0cml4WywidGVtcG8iXQp5IDwtIGRhdGFfbWF0cml4WywidmFsZW5jZSJdCnggPC0gZGF0YS5mcmFtZShjYmluZCh4MSx4Mix4Myx4NCx4NSkpCm1vZGVsIDwtIGxtKGZvcm11bGEgPSB5IH4geDEreDIreDMreDQreDUpCnlfaGF0IDwtIHByZWRpY3QobW9kZWwsIG5ld2RhdGEgPSB4KQplID0geSAtIHlfaGF0CnJzcyA8LSB0KGUpICUqJSBlCmBgYAoKQWRkIGEgbmV3IGNodW5rIGJ5IGNsaWNraW5nIHRoZSAqSW5zZXJ0IENodW5rKiBidXR0b24gb24gdGhlIHRvb2xiYXIgb3IgYnkgcHJlc3NpbmcgKkN0cmwrQWx0K0kqLgoKV2hlbiB5b3Ugc2F2ZSB0aGUgbm90ZWJvb2ssIGFuIEhUTUwgZmlsZSBjb250YWluaW5nIHRoZSBjb2RlIGFuZCBvdXRwdXQgd2lsbCBiZSBzYXZlZCBhbG9uZ3NpZGUgaXQgKGNsaWNrIHRoZSAqUHJldmlldyogYnV0dG9uIG9yIHByZXNzICpDdHJsK1NoaWZ0K0sqIHRvIHByZXZpZXcgdGhlIEhUTUwgZmlsZSkuCgpUaGUgcHJldmlldyBzaG93cyB5b3UgYSByZW5kZXJlZCBIVE1MIGNvcHkgb2YgdGhlIGNvbnRlbnRzIG9mIHRoZSBlZGl0b3IuIENvbnNlcXVlbnRseSwgdW5saWtlICpLbml0KiwgKlByZXZpZXcqIGRvZXMgbm90IHJ1biBhbnkgUiBjb2RlIGNodW5rcy4gSW5zdGVhZCwgdGhlIG91dHB1dCBvZiB0aGUgY2h1bmsgd2hlbiBpdCB3YXMgbGFzdCBydW4gaW4gdGhlIGVkaXRvciBpcyBkaXNwbGF5ZWQuCg==</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiU1RBMzAyX3Byb3Bvc2FsIgpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sKLS0tCgpSZWFkaW5nIGluIGRhdGEKCmBgYHtyfQpkYXRhX2ZyYW1lIDwtIHJlYWQuY3N2KCJkYXRhLmNzdiIpCmhlYWQoZGF0YSkKCmRhdGFfbWF0cml4IDwtIGRhdGEubWF0cml4KHN1YnNldChkYXRhX2ZyYW1lLCBzZWxlY3Q9YyhkYW5jZWFiaWxpdHksIGVuZXJneSwgbGl2ZW5lc3MsIG1vZGUsIHRlbXBvLCB2YWxlbmNlKSkpCmhlYWQoZGF0YV9tYXRyaXhbInZhbGFuY2UiXSkKYGBgCgpgYGB7cn0KeDEgPC0gZGF0YV9tYXRyaXhbLCJkYW5jZWFiaWxpdHkiXQp4MiA8LSBkYXRhX21hdHJpeFssImVuZXJneSJdCngzIDwtIGRhdGFfbWF0cml4WywibGl2ZW5lc3MiXQp4NCA8LSBkYXRhX21hdHJpeFssIm1vZGUiXQp4NSA8LSBkYXRhX21hdHJpeFssInRlbXBvIl0KeSA8LSBkYXRhX21hdHJpeFssInZhbGVuY2UiXQp4IDwtIGRhdGEuZnJhbWUoY2JpbmQoeDEseDIseDMseDQseDUpKQptb2RlbCA8LSBsbShmb3JtdWxhID0geSB+IHgxK3gyK3gzK3g0K3g1K3gxOngyK3gzOngyKQp5X2hhdCA8LSBwcmVkaWN0KG1vZGVsLCBuZXdkYXRhID0geCkKZSA9IHkgLSB5X2hhdApyc3MgPC0gdChlKSAlKiUgZQpyc3MKbW9kZWwKYGBgCgpgYGB7cn0KbGlicmFyeSh0aWR5dmVyc2UpCmxpYnJhcnkoa25pdHIpCgpkYXRhX2ZyYW1lIDwtIHJlYWQuY3N2KCJkYXRhLmNzdiIpCmRhdGFfZnJhbWUgPC0gZGF0YV9mcmFtZSAlPiUgc2VsZWN0KGRhbmNlYWJpbGl0eSwgZW5lcmd5LCBsaXZlbmVzcywgbW9kZSwgdGVtcG8sIHZhbGVuY2UpCgpzdW1tYXJ5X2RmIDwtIGRhdGEuZnJhbWUodChzYXBwbHkoZGF0YV9mcmFtZSwgc3VtbWFyeSkpLCBjaGVjay5uYW1lcyA9IEZBTFNFKQoKa2FibGUoc3VtbWFyeV9kZiwgY29sLm5hbWVzID0gYygiTWluIiwgIjFzdCBRdWFudGlsZSIsICJNZWRpYW4iLCAiTWVhbiIsICIzbmQgUXVhbnRpbGUiLCAiTWF4IikpCmBgYAoK</div>
 
 
 

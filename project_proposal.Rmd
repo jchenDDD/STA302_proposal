@@ -8,6 +8,7 @@ Reading in data
 ```{r}
 data_frame <- read.csv("data.csv")
 head(data)
+
 data_matrix <- data.matrix(subset(data_frame, select=c(danceability, energy, liveness, mode, tempo, valence)))
 head(data_matrix["valance"])
 ```
@@ -20,14 +21,23 @@ x4 <- data_matrix[,"mode"]
 x5 <- data_matrix[,"tempo"]
 y <- data_matrix[,"valence"]
 x <- data.frame(cbind(x1,x2,x3,x4,x5))
-model <- lm(formula = y ~ x1+x2+x3+x4+x5)
+model <- lm(formula = y ~ x1+x2+x3+x4+x5+x1:x2+x3:x2)
 y_hat <- predict(model, newdata = x)
 e = y - y_hat
 rss <- t(e) %*% e
+rss
+model
 ```
 
-Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+```{r}
+library(tidyverse)
+library(knitr)
 
-When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+data_frame <- read.csv("data.csv")
+data_frame <- data_frame %>% select(danceability, energy, liveness, mode, tempo, valence)
 
-The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+summary_df <- data.frame(t(sapply(data_frame, summary)), check.names = FALSE)
+
+kable(summary_df, col.names = c("Min", "1st Quantile", "Median", "Mean", "3nd Quantile", "Max"))
+```
+
